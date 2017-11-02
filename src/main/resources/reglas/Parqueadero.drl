@@ -1,0 +1,33 @@
+//created on: Oct 30, 2017
+package reglas
+
+//list any import classes here.
+import java.math.BigDecimal;
+import co.com.ceiba.parqueadero.enums.TipoVehiculoEnum;
+import co.com.ceiba.parqueadero.constantes.ConstantesParqueadero;
+import co.com.ceiba.parqueadero.dominio.Tarifa;
+
+
+//declare any global variables here
+
+rule "Carro"
+     when
+        tarifa : Tarifa(tipo.equals(TipoVehiculoEnum.CARRO))
+    then
+    	tarifa.setTopeVehiculo(ConstantesParqueadero.TOPE_CARRO);
+    	tarifa.setValorDia(new BigDecimal(ConstantesParqueadero.DIA_CARRO));
+    	tarifa.setValorHora(new BigDecimal(ConstantesParqueadero.HORA_CARRO));
+    	tarifa.setCargoAdicional(BigDecimal.ZERO);
+end
+
+rule "Moto"
+     when
+        tarifa : Tarifa(tipo.equals(TipoVehiculoEnum.MOTO))
+    then
+    	tarifa.setTopeVehiculo(ConstantesParqueadero.TOPE_MOTO);
+    	tarifa.setValorDia(new BigDecimal(ConstantesParqueadero.DIA_MOTO));
+    	tarifa.setValorHora(new BigDecimal(ConstantesParqueadero.HORA_MOTO));
+    	tarifa.setCargoAdicional(new BigDecimal(ConstantesParqueadero.CC_MOTO));
+end
+
+
