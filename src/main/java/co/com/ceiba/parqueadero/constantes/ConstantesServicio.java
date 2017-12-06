@@ -1,6 +1,6 @@
 package co.com.ceiba.parqueadero.constantes;
 
-public class ConstantesServicio {
+public final class ConstantesServicio {
 
 	// Url
 	public static final String U_INDEX = "/";
@@ -8,6 +8,7 @@ public class ConstantesServicio {
 	public static final String U_VEHICULO = "/vehiculo";
 	public static final String U_TIPOVEHICULO = "/tipoVehiculo";
 	public static final String U_VIGILANTE = "/vigilante";
+	public static final String U_SUSCRIPCION = "/suscripcion";
 	
 	// Form
 	public static final String F_PARQUEADERO = "parqueaderoForm";
@@ -29,6 +30,8 @@ public class ConstantesServicio {
 	public static final String P_TIPO = "tipo";
 	public static final String P_PLACA = "placa";
 	public static final String P_CILIN = "cilindraje";
+	public static final String P_EMAIL = "email";
+	public static final String P_ASUNTO = "asunto";
 	
 	// Util
 	public static final String REDIRECT = "redirect:";

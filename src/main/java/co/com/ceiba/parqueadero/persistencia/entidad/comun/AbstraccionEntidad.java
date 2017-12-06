@@ -20,7 +20,7 @@ public class AbstraccionEntidad implements Serializable {
 	private static final Logger LOGGER = Logger.getLogger(AbstraccionEntidad.class);
 
 	/**
-	 * Versi�n para el optimistic lock.
+	 * Version para el optimistic lock.
 	 */
 
 	@Column(name = "estado", nullable = false)

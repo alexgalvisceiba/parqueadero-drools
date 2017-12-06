@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import co.com.ceiba.parqueadero.constantes.ConstantesParqueadero;
 
 @Component
-public class Validacion {
+public final class Validacion {
 
 	private Validacion() {
 
