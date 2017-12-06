@@ -11,10 +11,6 @@ import co.com.ceiba.parqueadero.constantes.ConstantesParqueadero;
 @Component
 public class Validacion {
 
-	private Validacion() {
-
-	}
-
 	/**
 	 * 
 	 * @return TRUE si ya ha pasado el Lunes.
